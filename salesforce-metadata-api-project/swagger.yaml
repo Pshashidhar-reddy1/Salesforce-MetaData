@@ -28,6 +28,13 @@ paths:
                         type: string
                       type:
                         type: string
+                    required:
+                      - name
+                      - label
+                      - type
+              required:
+                - objectName
+                - fields
       responses:
         '200':
           description: Metadata created successfully
