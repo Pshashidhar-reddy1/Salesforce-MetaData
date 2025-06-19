@@ -1,0 +1,51 @@
+{
+  "objectName": "Beat_Plan",
+  "orgAlias": "your-org-alias",
+  "fields": [
+    {
+      "name": "Location",
+      "label": "Location",
+      "type": "Text"
+    },
+    {
+      "name": "Date",
+      "label": "Date",
+      "type": "Date"
+    },
+    {
+      "name": "Notes",
+      "label": "Notes",
+      "type": "TextArea"
+    },
+    {
+      "name": "Priority",
+      "label": "Priority",
+      "type": "Picklist"
+    },
+    {
+      "name": "Is_Active",
+      "label": "Is Active",
+      "type": "Checkbox"
+    },
+    {
+      "name": "Contact_Email",
+      "label": "Contact Email",
+      "type": "Email"
+    },
+    {
+      "name": "Phone_Number",
+      "label": "Phone Number",
+      "type": "Phone"
+    },
+    {
+      "name": "Website",
+      "label": "Website",
+      "type": "URL"
+    },
+    {
+      "name": "Amount",
+      "label": "Amount",
+      "type": "Number"
+    }
+  ]
+} 

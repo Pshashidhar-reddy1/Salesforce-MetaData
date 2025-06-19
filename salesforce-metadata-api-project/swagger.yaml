@@ -1,0 +1,35 @@
+# Swagger cache bust test
+openapi: 3.0.0
+info:
+  title: Salesforce Metadata Creation API
+  version: 1.0.0
+paths:
+  /create-metadata:
+    post:
+      summary: Create Salesforce metadata (custom object and fields)
+      description: Creates a custom Salesforce object and fields from provided input.
+      operationId: createMetadata
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                objectName:
+                  type: string
+                fields:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                      label:
+                        type: string
+                      type:
+                        type: string
+      responses:
+        '200':
+          description: Metadata created successfully
+        '400':
+          description: Bad request, missing required parameters 
